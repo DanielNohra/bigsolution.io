@@ -38,7 +38,7 @@ const UnderConstruction = () => {
 
         {/* Contact Info */}
         <div className="contact-info">
-          <p>For inquiries, please contact us at:</p>
+          <h5 className="contact-info-text">For inquiries, please contact us at:</h5>
           <a href="mailto:info@bigsolution.io" className="email-link">
             info@bigsolution.io
           </a>
