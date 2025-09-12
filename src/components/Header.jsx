@@ -70,11 +70,6 @@ const Header = ({ isScrolled }) => {
                 </a>
               </li>
               <li>
-                <a href="#team" onClick={() => scrollToSection("team")}>
-                  Team
-                </a>
-              </li>
-              <li>
                 <a
                   href="#partnerships"
                   onClick={() => scrollToSection("partnerships")}
