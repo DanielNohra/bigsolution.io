@@ -14,13 +14,6 @@ const Partnerships = () => {
       description:
         "An LOT agreement with leading money transfer companies in Beirut, allowing them to integrate crypto payments into their wallet applications.",
       type: "LOT Agreement",
-      status: "Active",
-    },
-    {
-      name: "Banque du Liban",
-      description:
-        "Currently in negotiation for an exclusive deal to incorporate Big Solution's crypto payment solution into Lebanese banking applications.",
-      type: "Exclusive Deal (In Negotiation)",
       status: "Pending",
     },
   ];
@@ -80,6 +73,12 @@ const Partnerships = () => {
               <div className="goal-item">
                 <span className="goal-number">03</span>
                 <span className="goal-text">Stablecoin integration</span>
+              </div>
+              <div className="goal-item">
+                <span className="goal-number">04</span>
+                <span className="goal-text">
+                  To accept more currencies than stablecoins
+                </span>
               </div>
             </div>
           </div>

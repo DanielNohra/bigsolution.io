@@ -71,26 +71,6 @@ const Hero = () => {
               <div className="crypto-card">
                 <div className="crypto-icon">
                   <img
-                    src="/bitcoin.png"
-                    alt="Bitcoin"
-                    className="crypto-image"
-                  />
-                </div>
-                <div className="crypto-text">Bitcoin</div>
-              </div>
-              <div className="crypto-card">
-                <div className="crypto-icon">
-                  <img
-                    src="/ethereum.png"
-                    alt="Ethereum"
-                    className="crypto-image"
-                  />
-                </div>
-                <div className="crypto-text">Ethereum</div>
-              </div>
-              <div className="crypto-card">
-                <div className="crypto-icon">
-                  <img
                     src="/usdc.webp"
                     alt="Stablecoins"
                     className="crypto-image"
