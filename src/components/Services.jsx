@@ -9,7 +9,6 @@ const Services = () => {
       description:
         "Enabling businesses to accept cryptocurrency payments securely with our advanced payment processing technology.",
       features: [
-        "Multi-cryptocurrency support",
         "Real-time processing",
         "Fraud protection",
         "PCI compliance",

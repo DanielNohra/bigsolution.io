@@ -106,11 +106,6 @@ const Footer = () => {
               reserved.
             </p>
           </div>
-          <div className="footer-legal">
-            <a href="#privacy">Privacy Policy</a>
-            <a href="#terms">Terms of Service</a>
-            <a href="#cookies">Cookie Policy</a>
-          </div>
           <button
             className="scroll-to-top"
             onClick={scrollToTop}
