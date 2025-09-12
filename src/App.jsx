@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 
 // Components
+import UnderConstruction from "./components/UnderConstruction";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -33,6 +34,13 @@ function App() {
       cleanupParallax();
     };
   }, []);
+
+  // Show under construction page until approval
+  const showUnderConstruction = true;
+
+  if (showUnderConstruction) {
+    return <UnderConstruction />;
+  }
 
   return (
     <div className="App">
