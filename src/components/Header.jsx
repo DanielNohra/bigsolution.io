@@ -83,14 +83,6 @@ const Header = ({ isScrolled }) => {
                 </a>
               </li>
             </ul>
-            <div className="mobile-menu-footer">
-              <div className="mobile-contact-info">
-                <p>Get in touch with us</p>
-                <a href="mailto:info@bigsolution.io" className="mobile-email">
-                  info@bigsolution.io
-                </a>
-              </div>
-            </div>
           </nav>
 
           <button
