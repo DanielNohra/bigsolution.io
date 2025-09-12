@@ -340,6 +340,11 @@
       rgba(26, 112, 208, 0.01)
     );
     backdrop-filter: blur(10px);
+    width: 100%;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .mobile-menu-toggle {
@@ -377,6 +382,10 @@
 
   .mobile-menu-footer {
     padding: 2rem 1.5rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .header-content {
