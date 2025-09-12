@@ -1,6 +1,5 @@
 .partnerships {
   background: var(--light-gray);
-  border-top: 3px solid var(--primary-blue);
   position: relative;
 }
 
@@ -8,16 +7,17 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
+  left: 0;
+  right: 0;
+  height: 1px;
   background: linear-gradient(
     90deg,
-    var(--primary-blue),
-    var(--secondary-blue)
+    transparent,
+    rgba(26, 112, 208, 0.1),
+    rgba(41, 160, 224, 0.2),
+    rgba(26, 112, 208, 0.1),
+    transparent
   );
-  border-radius: 0 0 3px 3px;
 }
 
 .partnerships-grid {

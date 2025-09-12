@@ -1,6 +1,5 @@
 .about {
   background: var(--white);
-  border-top: 3px solid var(--primary-blue);
   position: relative;
 }
 
@@ -8,12 +7,17 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--primary-blue), var(--accent-blue));
-  border-radius: 0 0 3px 3px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(26, 112, 208, 0.1),
+    rgba(64, 192, 240, 0.2),
+    rgba(26, 112, 208, 0.1),
+    transparent
+  );
 }
 
 .about-content {
@@ -21,6 +25,41 @@
   grid-template-columns: 2fr 1fr;
   gap: 4rem;
   align-items: start;
+}
+
+.about-text .about-card {
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.about-text .about-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.about-text .about-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.about-text .about-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.about-visual .visual-card {
+  opacity: 0;
+  transform: translateX(30px);
+  animation: fadeInRight 0.8s ease-out forwards;
+}
+
+.about-visual .visual-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.about-visual .visual-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.about-visual .visual-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.about-visual .visual-card:nth-child(4) {
+  animation-delay: 0.5s;
 }
 
 .about-text {
@@ -34,12 +73,12 @@
   border-radius: 12px;
   padding: 2rem;
   border-left: 4px solid var(--primary-blue);
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about-card:hover {
-  transform: translateX(10px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transform: translateX(15px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
 .about-card h3 {
@@ -67,12 +106,17 @@
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid var(--border-light);
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visual-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.visual-card:hover .visual-icon {
+  transform: scale(1.2) rotate(10deg);
+  color: var(--accent-blue);
 }
 
 .visual-icon {
@@ -81,6 +125,7 @@
   align-items: center;
   justify-content: center;
   color: var(--primary-blue);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visual-card h4 {

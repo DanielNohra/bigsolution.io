@@ -35,6 +35,7 @@ const Team = () => {
           <h2>Leadership Team</h2>
           <p className="section-subtitle">
             Experienced entrepreneurs and financial experts driving innovation
+            in the crypto payment space
           </p>
         </div>
 

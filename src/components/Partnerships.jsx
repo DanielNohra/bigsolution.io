@@ -32,6 +32,7 @@ const Partnerships = () => {
           <h2>Strategic Partnerships</h2>
           <p className="section-subtitle">
             Building the future of digital payments through strategic alliances
+            and innovative collaborations
           </p>
         </div>
 

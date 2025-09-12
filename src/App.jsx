@@ -11,6 +11,9 @@ import Partnerships from "./components/Partnerships";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+// Utils
+import { initScrollAnimations, initParallax } from "./utils/scrollAnimations";
+
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -20,7 +23,16 @@ function App() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    // Initialize scroll animations
+    const cleanupScrollAnimations = initScrollAnimations();
+    const cleanupParallax = initParallax();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      cleanupScrollAnimations();
+      cleanupParallax();
+    };
   }, []);
 
   return (

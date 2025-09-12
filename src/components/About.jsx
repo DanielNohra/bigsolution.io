@@ -8,7 +8,8 @@ const About = () => {
         <div className="section-title">
           <h2>About Big Solution FZ-LLC</h2>
           <p className="section-subtitle">
-            Pioneering the future of digital commerce in the MENA region
+            Pioneering the future of digital commerce in the MENA region with
+            innovative crypto payment solutions
           </p>
         </div>
 

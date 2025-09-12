@@ -39,7 +39,8 @@ const Contact = () => {
         <div className="section-title">
           <h2>Contact Us</h2>
           <p className="section-subtitle">
-            Have questions or need more information? We'd love to hear from you.
+            Have questions or need more information? We'd love to hear from you
+            and help you get started.
           </p>
         </div>
 

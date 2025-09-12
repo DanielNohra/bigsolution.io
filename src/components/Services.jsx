@@ -48,7 +48,7 @@ const Services = () => {
           <h2>Our Services</h2>
           <p className="section-subtitle">
             Comprehensive crypto payment solutions tailored for your business
-            needs
+            needs with cutting-edge technology
           </p>
         </div>
 
