@@ -1,0 +1,124 @@
+.contact {
+  background: var(--white);
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.contact-info h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--text-light);
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--light-gray);
+  border-radius: 12px;
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.contact-item:hover {
+  background: #f1f3f4;
+  transform: translateX(5px);
+  border-color: var(--primary-blue);
+  box-shadow: 0 4px 15px rgba(26, 112, 208, 0.1);
+}
+
+.contact-item:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+}
+
+.contact-email:hover {
+  background: rgba(26, 112, 208, 0.05);
+  border-color: var(--primary-blue);
+}
+
+.contact-phone:hover {
+  background: rgba(40, 192, 240, 0.05);
+  border-color: var(--accent-blue);
+}
+
+.contact-maps:hover {
+  background: rgba(41, 160, 224, 0.05);
+  border-color: var(--secondary-blue);
+}
+
+.contact-website:hover {
+  background: rgba(26, 112, 208, 0.05);
+  border-color: var(--primary-blue);
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--white);
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(26, 112, 208, 0.3);
+}
+
+.contact-text h4 {
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-text p {
+  color: var(--text-dark);
+  margin: 0;
+  font-weight: var(--font-weight-medium);
+}
+
+@media (max-width: 768px) {
+  .contact-item {
+    padding: 1rem;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-item {
+    padding: 0.75rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-icon {
+    align-self: center;
+  }
+}
