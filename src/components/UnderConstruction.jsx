@@ -33,15 +33,7 @@ const UnderConstruction = () => {
             <div className="spinner-ring"></div>
             <div className="spinner-ring"></div>
           </div>
-          <p className="loading-text">Loading...</p>
-        </div>
-
-        {/* Progress Bar */}
-        <div className="progress-container">
-          <div className="progress-bar">
-            <div className="progress-fill"></div>
-          </div>
-          <span className="progress-text">Coming Soon</span>
+          <p className="loading-text">Coming Soon...</p>
         </div>
 
         {/* Contact Info */}
