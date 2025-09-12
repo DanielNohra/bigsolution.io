@@ -1,5 +1,19 @@
 .services {
   background: var(--light-gray);
+  border-top: 3px solid var(--secondary-blue);
+  position: relative;
+}
+
+.services::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--secondary-blue), var(--accent-blue));
+  border-radius: 0 0 3px 3px;
 }
 
 .services-grid {
@@ -151,5 +165,4 @@
     height: 60px;
     font-size: 1.5rem;
   }
-
 }

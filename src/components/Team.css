@@ -1,6 +1,20 @@
 .team {
   background: var(--white);
   padding-top: 40px;
+  border-top: 3px solid var(--accent-blue);
+  position: relative;
+}
+
+.team::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-blue), var(--primary-blue));
+  border-radius: 0 0 3px 3px;
 }
 
 .team-grid {

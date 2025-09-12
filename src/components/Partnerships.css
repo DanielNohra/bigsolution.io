@@ -1,5 +1,23 @@
 .partnerships {
   background: var(--light-gray);
+  border-top: 3px solid var(--primary-blue);
+  position: relative;
+}
+
+.partnerships::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--primary-blue),
+    var(--secondary-blue)
+  );
+  border-radius: 0 0 3px 3px;
 }
 
 .partnerships-grid {
@@ -175,7 +193,7 @@
 .goal-number {
   font-size: 1.5rem;
   font-weight: var(--font-weight-bold);
-  color: var(--accent-blue);
+  color: var(--white);
   background: rgba(255, 255, 255, 0.2);
   width: 40px;
   height: 40px;

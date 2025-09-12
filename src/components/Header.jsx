@@ -58,26 +58,36 @@ const Header = ({ isScrolled }) => {
           </div>
 
           <nav className={`nav ${isMobileMenuOpen ? "open" : ""}`}>
-            <div className="nav-links">
-              <a href="#about" onClick={() => scrollToSection("about")}>
-                About
-              </a>
-              <a href="#services" onClick={() => scrollToSection("services")}>
-                Services
-              </a>
-              <a href="#team" onClick={() => scrollToSection("team")}>
-                Team
-              </a>
-              <a
-                href="#partnerships"
-                onClick={() => scrollToSection("partnerships")}
-              >
-                Partnerships
-              </a>
-              <a href="#contact" onClick={() => scrollToSection("contact")}>
-                Contact
-              </a>
-            </div>
+            <ul className="nav-links">
+              <li>
+                <a href="#about" onClick={() => scrollToSection("about")}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#services" onClick={() => scrollToSection("services")}>
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#team" onClick={() => scrollToSection("team")}>
+                  Team
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#partnerships"
+                  onClick={() => scrollToSection("partnerships")}
+                >
+                  Partnerships
+                </a>
+              </li>
+              <li>
+                <a href="#contact" onClick={() => scrollToSection("contact")}>
+                  Contact
+                </a>
+              </li>
+            </ul>
             <div className="mobile-menu-footer">
               <div className="mobile-contact-info">
                 <p>Get in touch with us</p>

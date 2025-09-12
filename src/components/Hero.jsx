@@ -10,7 +10,7 @@ const Hero = () => {
     if (element) {
       // Get the element's position
       const elementTop = element.offsetTop;
-      const headerHeight = 80; // Approximate header height
+      const headerHeight = 90; // Updated header height
       const scrollToPosition = elementTop - headerHeight;
 
       console.log(`Scrolling to position: ${scrollToPosition}`);
@@ -46,12 +46,6 @@ const Hero = () => {
             <div className="hero-buttons">
               <button
                 className="btn btn-primary"
-                onClick={() => scrollToSection("contact")}
-              >
-                Get Started Today
-              </button>
-              <button
-                className="btn btn-secondary"
                 onClick={() => scrollToSection("contact")}
               >
                 Get In Touch

@@ -1,3 +1,4 @@
+/* Header Styles */
 .header {
   position: fixed;
   top: 0;
@@ -20,49 +21,65 @@
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+  min-height: 90px;
+  width: 100%;
 }
 
+/* Logo Styles */
 .logo {
   display: flex;
   align-items: center;
-  text-decoration: none;
+  flex-shrink: 0;
+  z-index: 1001;
 }
 
 .logo-image {
-  height: 50px;
+  height: 60px;
   width: auto;
   object-fit: contain;
   transition: var(--transition);
-  transform: scale(1.4);
-  margin-left: 3px;
+  transform: scale(1.3);
 }
 
 .logo-image:hover {
-  transform: scale(1.6);
+  transform: scale(1.4);
 }
 
+/* Navigation Styles */
 .nav {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
-.nav a {
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
   color: var(--text-dark);
   text-decoration: none;
   font-weight: var(--font-weight-medium);
+  font-size: 1rem;
   transition: var(--transition);
   position: relative;
+  padding: 0.75rem 0;
+  white-space: nowrap;
 }
 
-.nav a:hover {
+.nav-links a:hover {
   color: var(--primary-blue);
 }
 
-.nav a::after {
+.nav-links a::after {
   content: "";
   position: absolute;
-  bottom: -5px;
+  bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
@@ -70,19 +87,20 @@
   transition: var(--transition);
 }
 
-.nav a:hover::after {
+.nav-links a:hover::after {
   width: 100%;
 }
 
+/* Mobile Menu Toggle */
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 8px;
+  border-radius: 6px;
   transition: var(--transition);
   position: relative;
   z-index: 1001;
@@ -93,8 +111,8 @@
 }
 
 .mobile-menu-toggle span {
-  width: 28px;
-  height: 3px;
+  width: 24px;
+  height: 2px;
   background: var(--text-dark);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px;
@@ -105,9 +123,9 @@
   background: var(--primary-blue);
 }
 
-/* Hamburger animation */
+/* Hamburger Animation */
 .mobile-menu-toggle.open span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .mobile-menu-toggle.open span:nth-child(2) {
@@ -116,10 +134,10 @@
 }
 
 .mobile-menu-toggle.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Mobile menu overlay */
+/* Mobile Menu Overlay */
 .mobile-menu-overlay {
   display: none;
   position: fixed;
@@ -142,20 +160,70 @@
   }
 }
 
+/* Mobile Menu Footer */
+.mobile-menu-footer {
+  display: none;
+}
+
+.mobile-contact-info {
+  text-align: center;
+}
+
+.mobile-contact-info p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.mobile-email {
+  color: var(--primary-blue);
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.mobile-email:hover {
+  color: var(--accent-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .nav-links {
+    gap: 2rem;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .header-content {
+    min-height: 80px;
+  }
+
   .nav {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 320px;
+    width: 300px;
     height: 100vh;
     background: linear-gradient(135deg, var(--white) 0%, #f8f9fa 100%);
     flex-direction: column;
+    justify-content: flex-start;
     padding: 0;
     box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 999;
     overflow-y: auto;
@@ -163,14 +231,13 @@
 
   .nav.open {
     right: 0;
-    transform: translateX(0);
   }
 
   .nav-links {
-    display: flex;
     flex-direction: column;
-    padding: 6rem 2rem 2rem;
     gap: 0;
+    padding: 6rem 2rem 2rem;
+    width: 100%;
   }
 
   .nav-links a {
@@ -223,32 +290,11 @@
   }
 
   .mobile-menu-footer {
+    display: block;
     margin-top: auto;
     padding: 2rem;
     border-top: 1px solid var(--border-light);
     background: rgba(26, 112, 208, 0.02);
-  }
-
-  .mobile-contact-info {
-    text-align: center;
-  }
-
-  .mobile-contact-info p {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-
-  .mobile-email {
-    color: var(--primary-blue);
-    text-decoration: none;
-    font-weight: var(--font-weight-semibold);
-    font-size: 1rem;
-    transition: var(--transition);
-  }
-
-  .mobile-email:hover {
-    color: var(--accent-blue);
   }
 
   .mobile-menu-toggle {
@@ -285,5 +331,13 @@
 
   .mobile-menu-footer {
     padding: 1.5rem;
+  }
+
+  .header-content {
+    min-height: 75px;
+  }
+
+  .logo-image {
+    height: 45px;
   }
 }
