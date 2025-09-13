@@ -80,11 +80,6 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="tel:+9613252323" className="footer-contact-link">
-                    +961 3 25 23 23
-                  </a>
-                </li>
-                <li>
                   <a
                     href="https://www.bigsolution.io"
                     target="_blank"

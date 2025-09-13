@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   // Show under construction page until approval
-  const showUnderConstruction = true;
+  const showUnderConstruction = false;
 
   if (showUnderConstruction) {
     return <UnderConstruction />;

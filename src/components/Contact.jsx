@@ -24,13 +24,6 @@ const Contact = () => {
       link: "mailto:info@bigsolution.io",
       type: "email",
     },
-    {
-      icon: Phone,
-      title: "Phone",
-      details: "+961 3 25 23 23",
-      link: "tel:+9613252323",
-      type: "phone",
-    },
   ];
 
   return (

@@ -5,14 +5,14 @@ const Partnerships = () => {
     {
       name: "Betarabia Lebanon",
       description:
-        "An exclusive partnership with Betarabia, Lebanon's premier betting platform powered by Casino du Liban, to provide seamless crypto payment options.",
+        "Partnership with Betarabia, Lebanon’s premier betting platform powered by Casino du Liban, to provide seamless crypto payment options on their official website.",
       type: "Exclusive Partnership",
       status: "Active",
     },
     {
       name: "Money Transfer Companies",
       description:
-        "An LOT agreement with leading money transfer companies in Beirut, allowing them to integrate crypto payments into their wallet applications.",
+        "Currently in negotiation for an exclusive deal to incorporate Big Solution’s crypto payment solution into Lebanese wallet applications, a move set to revolutionize digital transactions in the region once BDL approves cryptocurrency for financial institutions.",
       type: "LOT Agreement",
       status: "Pending",
     },
