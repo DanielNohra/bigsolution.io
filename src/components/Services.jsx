@@ -1,4 +1,4 @@
-import { CreditCard, Plug, BarChart3 } from "lucide-react";
+import { CreditCard, Plug, BarChart3, Shield } from "lucide-react";
 import "./Services.css";
 
 const Services = () => {
@@ -8,11 +8,7 @@ const Services = () => {
       title: "Crypto Payment Solutions",
       description:
         "Enabling businesses to accept cryptocurrency payments securely with our advanced payment processing technology.",
-      features: [
-        "Real-time processing",
-        "Fraud protection",
-        "PCI compliance",
-      ],
+      features: ["Real-time processing", "Fraud protection", "PCI compliance"],
     },
     {
       icon: Plug,
@@ -36,6 +32,18 @@ const Services = () => {
         "Transaction history",
         "Reporting tools",
         "Custom alerts",
+      ],
+    },
+    {
+      icon: Shield,
+      title: "AML Check",
+      description:
+        "Comprehensive Anti-Money Laundering compliance solutions to ensure regulatory adherence and risk mitigation.",
+      features: [
+        "Regular Internal Check",
+        "Transaction Monitoring",
+        "Suspicious Activity Reporting",
+        "Risk Assess",
       ],
     },
   ];
