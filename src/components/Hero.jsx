@@ -71,7 +71,7 @@ const Hero = () => {
               <div className="crypto-card">
                 <div className="crypto-icon">
                   <img
-                    src="/usdc.webp"
+                    src="/usdc-usd-coin.svg"
                     alt="Stablecoins"
                     className="crypto-image"
                   />
