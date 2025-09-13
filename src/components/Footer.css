@@ -27,10 +27,12 @@
   object-fit: contain;
   border-radius: 15px;
   transition: var(--transition);
+  transform: scale(2);
+  margin-left: 16px;
 }
 
 .footer-logo-image:hover {
-  transform: scale(1.05);
+  transform: scale(2.2);
 }
 
 .footer-description {
