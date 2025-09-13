@@ -43,7 +43,7 @@ const Services = () => {
         "Regular Internal Check",
         "Transaction Monitoring",
         "Suspicious Activity Reporting",
-        "Risk Assess",
+        "Risk Assessment",
       ],
     },
   ];
